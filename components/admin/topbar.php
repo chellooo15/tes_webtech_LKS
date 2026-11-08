@@ -1,0 +1,1 @@
+<?php $user=authUser()??[]; ?><header class="topbar"><div><h1><?= e($pageTitle ?? 'Koperasi Sekolah') ?></h1><p><?= e($pageSubtitle ?? 'Sistem Informasi Koperasi Sekolah') ?></p></div><div class="topbar-user"><?= e($user['name']??'Pengunjung') ?><span class="badge"><?= e($user['role']??'guest') ?></span></div></header>

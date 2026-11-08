@@ -1,0 +1,1 @@
+<footer class="site-footer"><span>&copy; 2026 Koperasi Sekolah - SMK Kristen Immanuel</span><span>Sistem Informasi Koperasi Sekolah</span></footer>

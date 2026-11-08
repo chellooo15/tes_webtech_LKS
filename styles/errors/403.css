@@ -1,0 +1,18 @@
+/* PAGE: ERRORS - 403 ACCESS DENIED */
+@import url("../base.css");
+.error-card {
+  width: min(92%, 520px);
+  padding: 40px;
+}
+.error-card h1 {
+  color: var(--red);
+  margin-bottom: 12px;
+}
+.error-card p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.error-card .auth-link a {
+  color: var(--green);
+  font-weight: 600;
+}

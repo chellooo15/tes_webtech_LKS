@@ -1,0 +1,185 @@
+@import url("base.css");
+@import url("pages/management.css");
+@import url("components/sidebar.css");
+@import url("components/header.css");
+@import url("components/forms.css");
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+.main {
+  flex: 1;
+  min-width: 0;
+}
+.content {
+  padding: 28px 36px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 36px;
+}
+.topbar h1 {
+  font-size: 22px;
+  color: var(--green-dark);
+}
+.topbar p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.topbar-user {
+  font-size: 14px;
+  color: black;
+}
+.sidebar {
+  width: 230px;
+  flex-shrink: 0;
+  background: #157900;
+  border-right: 1px solid var(--line);
+  padding: 24px 16px;
+}
+.sidebar .brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /* color: var(--green-dark); */
+  padding: 0 12px 24px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sidebar nav a {
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: white;
+  /* color: var(--text); */
+  font-size: 14px;
+}
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #e3f1e8;
+  color: var(--green-dark);
+}
+.sidebar nav .logout {
+  margin-top: 20px;
+  color: var(--red);
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.card {
+  overflow-x: auto;
+}
+table {
+  min-width: 720px;
+}
+td.actions {
+  white-space: nowrap;
+  display: table-cell;
+}
+td.actions a {
+  margin-right: 10px;
+  color: var(--green);
+  font-size: 13px;
+}
+td.actions a.delete {
+  color: var(--red);
+}
+.form-card {
+  max-width: 850px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+}
+.form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.choice-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+.choice-group label {
+  font-weight: normal;
+}
+.error-text {
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 4px;
+}
+.form-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.page-heading {
+  margin-bottom: 18px;
+}
+.page-heading h2 {
+  font-size: 22px;
+  color: var(--green-dark);
+}
+.page-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.alert {
+  margin-bottom: 16px;
+}
+@media (max-width: 760px) {
+  .layout {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 12px;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sidebar .brand {
+    padding-bottom: 10px;
+  }
+  .content {
+    padding: 18px;
+  }
+  .topbar {
+    padding: 16px 18px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
