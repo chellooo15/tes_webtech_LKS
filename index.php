@@ -10,6 +10,7 @@ $user = authUser(); ?>
  <link rel="stylesheet" href="/styles/index.css">
 </head>
 
+
 <body>
  <?php if ($user) {
   $pageTitle = 'Beranda';
